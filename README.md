@@ -373,9 +373,9 @@ Total Complexity is the sum of mostly [makeChoice]() and [getZeroSumMoves]() com
 
 ## Nim sums
 
-A nim-sum is a mathematical concept used to determine whether a position is winning or losing in the game of Nim. In the Nim game it is known that if both players make no mistakes and the nim-sum at the beginning of the game is <b>not</b> zero, then the player starting is guaranteed to win. If the players make no mistakes and the nim sum at the beginning of the game <b>is</b> zero then the player who does not go first is guaranteed to win.
+A nim-sum is a mathematical concept used to determine whether a position is winning or losing in the game of Nim. In a standard game of Nim it is known that if both players make no mistakes and the nim-sum at the beginning of the game is <b>not</b> zero, then the player starting is guaranteed to win. If the players make no mistakes and the nim sum at the beginning of the game <b>is</b> zero then the player who does not go first is guaranteed to win.
 
-The nim-sum is calculated by performing carryless binary addition on the size of all non-zero heaps. This is equivalent to bitwise-xor on the size of all heaps. It is known by the Sprague-Grundy theorem that a winning strategy in a misère game of Nim is to always end a move with a nim-sum of 0 until a certain condition is met. Our [`shortPredictionBot`](https://github.com/TheLostLight/ModifiedNim/blob/main/NimBots.py#L228) uses this strategy, along with short-sighted forward prediction to inform itself of the next favorable move. 
+In a standard Nim game, the nim-sum is calculated by performing carryless binary addition on the size of all non-zero heaps. This is equivalent to bitwise-xor on the size of all heaps. It is known by the Sprague-Grundy theorem that a winning strategy in a misère game of Nim is to always end a move with a nim-sum of 0 until a certain condition is met. Our [`shortPredictionBot`](https://github.com/TheLostLight/ModifiedNim/blob/main/NimBots.py#L228) uses this strategy, along with short-sighted forward prediction to inform itself of the next favorable move. 
 
 ## Special Misère Condition <a name="specialwincon"></a>
 
